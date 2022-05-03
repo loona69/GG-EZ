@@ -11,12 +11,12 @@ def get_original_html_and_save():
 
     options = webdriver.ChromeOptions()
     options.add_argument(
-        f"user-agent={'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36'}"
+        f"user-agent={'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36'}"
     )
 
     try:
         driver = webdriver.Chrome(
-            executable_path='/home/zaraza/Projects/Парсер/parserDB/chromedriver',
+            executable_path='C:\Users\HPUser\PycharmProjects\pythonProject4\chromedriver',
             options=options,
         )
         driver.get(
