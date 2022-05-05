@@ -46,7 +46,7 @@ def get_original_html_and_save():
             click_on_page.click()
             sleep(2)
 
-            with open(f'index_page_{page}.html', 'w') as file:
+            with open(f'index_page_{page}.html', 'w', encoding='utf-8') as file:
                 result = file.write(driver.page_source)
 
     except Exception as ex:
